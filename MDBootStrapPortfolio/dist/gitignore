@@ -1,4 +1,4 @@
 node_modules/*
 .idea/
 
-MDBootStrapPortfolio/README.md
+MDBootStrapPortfolio/node_modules/*/README.md
