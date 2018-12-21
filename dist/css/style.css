@@ -30,7 +30,7 @@ header,
 }
 
 .rgba-gradient {
-  background: -moz-linear-gradient(45deg,  rgba(13, 76, 76, 0.6), rgba(253, 187, 45, 0.69) 100%);
-  background: -webkit-linear-gradient(70deg,  rgba(13, 76, 76, 0.6), rgba(253, 187, 45, 0.69) 100%);
-  background: linear-gradient(to 45deg, rgba(13, 76, 76, 0.6), rgba(253, 187, 45, 0.69) 100%);
+  background: -moz-linear-gradient(45deg,  rgba(2, 65, 199, 0.897), rgba(127, 176, 255, 0.69) 100%);
+  background: -webkit-linear-gradient(70deg,  rgba(2, 65, 199, 0.897), rgba(127, 176, 255, 0.69)  100%);
+  background: linear-gradient(to 45deg, rgba(2, 65, 199, 0.897), rgba(127, 176, 255, 0.69) 100%);
 }

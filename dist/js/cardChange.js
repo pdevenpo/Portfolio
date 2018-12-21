@@ -6,9 +6,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var elementCard1 = document.getElementById('card-1');
     var elementCard2 = document.getElementById('card-2');
     var elementCard3 = document.getElementById('card-3');
-    setInterval(function(){detectClassColor(elementCard1, elementCard1.classList.item(2))},5000);
-    setInterval(function(){detectClassColor(elementCard2, elementCard2.classList.item(2))},6000);
-    setInterval(function(){detectClassColor(elementCard3, elementCard3.classList.item(2))},7000);
+    //classlist item will be the background color
+    setInterval(function(){colorChange(elementCard1, elementCard1.classList.item(2))},6000);
+    setInterval(function(){colorChange(elementCard2, elementCard2.classList.item(2))},6000);
+    setInterval(function(){colorChange(elementCard3, elementCard3.classList.item(2))},6000);
     
 });
 
@@ -18,25 +19,6 @@ $(function () {
 })
 
 
-//function to detect the current-state of the background color
-function detectClassColor(elementCardNumber,classColor){
-    switch(classColor){
-        case 'bg-dark':
-            colorChange(elementCardNumber,'bg-dark');
-        break;
-        case 'bg-primary':
-            colorChange(elementCardNumber,'bg-primary');
-        break;
-        case 'bg-light':
-            colorChange(elementCardNumber,'bg-light');
-        break;
-        case 'bg-secondary':
-            colorChange(elementCardNumber,'bg-secondary');
-        break;
-        default:
-
-    }
-}
 //function to handle the current background to determine the next background color
 function colorChange(elementCard,bgColor){
     //var num = Math.floor(Math.random()*3+1);
@@ -47,21 +29,17 @@ function colorChange(elementCard,bgColor){
             //setTimeout(function(){elementCard.classList.replace('bg-light','bg-dark')},3000)
         break;
         case 'bg-light':
-            elementCard.classList.replace('bg-light','bg-primary')
+            elementCard.classList.replace('bg-light','bg-danger')
             //setTimeout(function(){elementCard.classList.replace('bg-primary','bg-dark')},3000)
         break;
-        case 'bg-primary':
-            elementCard.classList.replace('bg-primary','bg-secondary')
+        case 'bg-danger':
+            elementCard.classList.replace('bg-danger','bg-dark')
             //setTimeout(function(){elementCard.classList.replace('bg-secondary','bg-dark')},3000)
-        break;
-        case 'bg-secondary':
-            elementCard.classList.replace('bg-secondary','bg-dark')
         break;
         default:
             elementCard.classList.replace('bg-dark','bg-dark')
     }
     
-    //elementCard.classList.replace('bg-dark','bg-light')
 }
 //bg-primary
 //bg-secondary
