@@ -1,2 +1,8 @@
 #Ignore all readmes besides main
 MDBootStrapPortfolio/README.md
+
+MDBootStrapPortfolio/readme.md
+MDBootStrapPortfolio/readme.txt
+MDBootStrapPortfolio/*/readme.md
+MDBootStrapPortfolio/*/*/readme.md
+MDBootStrapPortfolio/*/*/*/readme.md
